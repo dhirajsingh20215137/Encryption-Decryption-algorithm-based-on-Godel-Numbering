@@ -7,13 +7,9 @@ This repository contains an implementation of a cryptographic model based on Gö
 ## Table of Contents
 
 - [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Encryption and Decryption Process](#encryption-and-decryption-process)
 - [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
