@@ -30,7 +30,15 @@ To use this project, clone the repository and compile the code using a C++ compi
 git clone https://github.com/yourusername/GodelNumberingEncryption.git
 cd GodelNumberingEncryption
 
-## Encryption and Decryption Process](#encryption-and-decryption-process
-     
 
+**## Encryption and Decryption Process**
 
+### Example: Encrypting and Decrypting a Message
+
+Suppose we want to encrypt the message "Hello, World!" using the provided encryption algorithm.
+
+#### Step 1: Generate the Encryption Key
+First, we use the `diffie_hellman` function to generate a key based on the Diffie-Hellman key exchange method.
+
+```cpp
+unsigned long long key = diffie_hellman(7911, 1567689892, 292787734);
