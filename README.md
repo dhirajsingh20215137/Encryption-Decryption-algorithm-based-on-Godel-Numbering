@@ -36,6 +36,7 @@ First, we use the `diffie_hellman` function to generate a key based on the Diffi
 unsigned long long key = diffie_hellman(7911, 1567689892, 292787734);
 
 **Step 2: Encrypt the Message**
+
 string message = "Hello, World!";
 string encrypted_text = encrypt(message, key);
 cout << "Encrypted Text: " << encrypted_text << endl;
@@ -43,6 +44,7 @@ cout << "Encrypted Text: " << encrypted_text << endl;
 Encrypted Text: 74231725653{N2Z}23255378519{y4A}29849789639{8Mc}31937563685{7Op}77448733268{K1@}169536148549{L3t}43875142287{U$W}31937563685{7Op}29849789639{8Mc}23255378519{y4A}213461782319{`X&}74231725653{N2Z}
 
 **Step 3: Decrypt the Message**
+
 string decrypted_text = decrypt(encrypted_text, key);
 cout << "Decrypted Text: " << decrypted_text << endl;
 
