@@ -25,7 +25,36 @@ This repository contains an implementation of a cryptographic model based on Gö
 
 ## Encryption and Decryption Process
 
-### Example: Encrypting and Decrypting a Message
+
+### Overview
+
+This section describes how to encrypt and decrypt a message using the Gödel Numbering-Based Encryption/Decryption Algorithm.
+
+### Step 1: Generate the Encryption Key
+
+Use the `diffie_hellman` function to generate an encryption key. This function utilizes the Diffie-Hellman key exchange method to create a secure key.
+
+### Step 2: Encrypt the Message
+
+Encrypt your message using the `encrypt` function. This function takes the message and the generated key as inputs and produces an encrypted string. The encryption process involves converting each character of the message into a numerical representation, encoding it using prime numbers, and appending a buffer string for added security.
+
+### Step 3: Decrypt the Message
+
+Decrypt the encrypted text using the `decrypt` function. This function takes the encrypted string and the same key used for encryption, and it reconstructs the original message. The decryption process reverses the encryption steps to recover the plaintext message.
+
+### Process Details
+
+- **Key Generation**: Create a secure key using Diffie-Hellman.
+- **Encryption**: Convert the message to a numerical format, encode with prime numbers, and add a buffer string.
+- **Decryption**: Reverse the encoding and buffer addition to recover the original message.
+
+This process ensures that your message is securely transformed and then accurately restored.
+
+
+
+
+## Examples
+  ### Example: Encrypting and Decrypting a Message
 
 Suppose we want to encrypt the message "Hello, World!" using the provided encryption algorithm.
 
@@ -49,7 +78,6 @@ string decrypted_text = decrypt(encrypted_text, key);
 cout << "Decrypted Text: " << decrypted_text << endl;
 
 Decrypted Text: Hello, World!
-
 
 
 
